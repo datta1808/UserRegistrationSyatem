@@ -7,7 +7,8 @@ public class UserRegistration extends UserValidator {
     public void SelectOption() {
         while (true) {
             System.out.println("1. FirstName");
-            System.out.println("1. LastName");
+            System.out.println("2. LastName");
+            System.out.println("3. Email");
             System.out.println("0. Exit");
             System.out.println("Enter option to check for Validation");
 
@@ -24,6 +25,11 @@ public class UserRegistration extends UserValidator {
                     System.out.println("Enter your Last name");
                     String LastName = sc.next();
                     lastNameValidation(LastName);
+                    break;
+                case 3:
+                    System.out.println("Enter your Email");
+                    String email = sc.next();
+                    emailValidation(email);
                     break;
                 case 0:
                     return;

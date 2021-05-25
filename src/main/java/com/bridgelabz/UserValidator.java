@@ -11,4 +11,9 @@ public class UserValidator {
         boolean valid = lastName.matches("^[A-Z]{1}[a-z]{2,}$");
         System.out.println("Name: " + lastName + "\nValid: " + valid);
     }
+
+    public void emailValidation (String email){
+        boolean valid = email.matches("^[A-Za-z0-9+_.-]+@(.+)$");
+        System.out.println("Name: " + email + "\nValid: " + valid);
+    }
 }
