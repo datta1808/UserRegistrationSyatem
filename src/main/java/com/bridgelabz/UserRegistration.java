@@ -37,6 +37,11 @@ public class UserRegistration extends UserValidator {
                     String mobile = sc.next();
                     mobileValidation(mobile);
                     break;
+                case 5:
+                    System.out.println("Enter your Password");
+                    String password = sc.next();
+                    passwordValidation(password);
+                    break;
                 case 0:
                     return;
             }

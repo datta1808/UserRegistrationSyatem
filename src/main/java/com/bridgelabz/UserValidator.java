@@ -21,4 +21,9 @@ public class UserValidator {
         boolean validation = mobile.matches("^[1-9][0-9]+[ ]?+[1-9][0-9]{9}$");
         System.out.println("Name: " + mobile + "\nValid: " + validation);
     }
+
+    public void passwordValidation (String password){
+        boolean valid = password.matches("(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z])(?=.*[@#$%!]{1}).{8,}");
+        System.out.println("Name: " + password + "\nValid: " + valid);
+    }
 }
