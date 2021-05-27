@@ -10,6 +10,7 @@ public class UserRegistration extends UserValidator {
             System.out.println("2. LastName");
             System.out.println("3. Email");
             System.out.println("4. Mobile Number");
+            System.out.println("5. Password");
             System.out.println("0. Exit");
             System.out.println("Enter option to check for Validation");
 
@@ -24,8 +25,8 @@ public class UserRegistration extends UserValidator {
                     break;
                 case 2:
                     System.out.println("Enter your Last name");
-                    String LastName = sc.next();
-                    lastNameValidation(LastName);
+                    String lastName = sc.next();
+                    lastNameValidation(lastName);
                     break;
                 case 3:
                     System.out.println("Enter your Email");
@@ -33,8 +34,8 @@ public class UserRegistration extends UserValidator {
                     emailValidation(email);
                     break;
                 case 4:
-                    System.out.println("Enter your Mobile");
-                    String mobile = sc.next();
+                    System.out.println("Enter your Mobile Number");
+                    String mobile = sc.nextLine();
                     mobileValidation(mobile);
                     break;
                 case 5:
