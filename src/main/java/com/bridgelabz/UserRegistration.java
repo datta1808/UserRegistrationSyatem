@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class UserRegistration extends UserValidator {
 
     public void SelectOption() {
+
         while (true) {
             System.out.println("1. FirstName");
             System.out.println("2. LastName");

@@ -47,9 +47,4 @@ public class UserValidator {
             System.out.println("Invalid. \n Enter a valid Password");
         }
     }
-
-    public void passwordValidation (String password){
-        boolean valid = password.matches("(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z])(?=.*[@#$%!]{1}).{8,}");
-        System.out.println("Name: " + password + "\nValid: " + valid);
-    }
 }
